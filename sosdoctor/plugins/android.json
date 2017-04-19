@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.naturalphone.sosdoctor"
+        },
+        "cordova-plugin-firebase": {
+            "PACKAGE_NAME": "com.naturalphone.sosdoctor"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.naturalphone.sosdoctor"
+        }
+    },
+    "dependent_plugins": {}
+}
