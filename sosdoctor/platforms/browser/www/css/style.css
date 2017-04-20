@@ -1,0 +1,172 @@
+.statusbar-overlay {
+  background: #000000;
+}
+
+/*login*/
+
+.login-screen-content {
+  padding-top: 104px;
+}
+
+.page-content {
+  background-image: url('../img/fondo_gr.png');
+}
+
+.item-input-field::after {
+  background: none;
+}
+
+#login-screen-img {
+  text-align: center;
+}
+
+.login-screen-title {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+
+.item-input input {
+  padding: 15px!important;
+  background: white!important;
+}
+
+.list-block .item-inner::after{
+  background: none;
+}
+
+.list-block input[type=text], .list-block input[type=password] {
+  height: 45px!important;
+}
+
+.list-block .item.content {
+  padding-left: 35px;
+}
+
+.list-block .item-inner {
+  padding-right: 35px;
+}
+
+.color-green {
+  text-align: center;
+  background: #4caf50;
+  color: white;
+  border-radius: 0px;
+  margin: 0px 35px 0px 16px;
+}
+
+.recover {
+  background: transparent;
+  text-transform: none;
+  color: white;
+}
+
+
+/*principal*/
+
+.navbar {
+  background: #4ab936;
+}
+
+.subnavbar {
+  background: #bde021;
+}
+
+
+/*navbar*/
+
+.buttons-row .left a img {
+  padding-top: 8px;
+}
+
+.right a {
+  padding: 0px 10px 0px 10px !important;
+}
+
+.link img, .buttons-row .left a img {
+  height: 24px;
+  width: 24px;
+}
+
+
+/*subnavbar*/
+
+.subnavbar .center {
+  color: white;
+  line-height: 21px;
+  font-size: 16px;
+}
+
+.with-subnavbar {
+  padding-top: 48px;
+}
+
+
+/*mapa*/
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+
+/*modal*/
+
+.modal {
+  width: 336px;
+  left: 43%;
+  border-radius: 0px;
+}
+
+.text-paciente {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: relative;
+  margin-top: -48px;
+}
+
+.detalle img, .direccion img, .control img {
+  float: left;
+}
+
+/* Lista pacientes */
+.list-block-pacientes{
+  margin: 0px;
+}
+.list-block-pacientes .item-inner{
+    flex-direction: column;
+    -webkit-align-items: left;
+}
+.list-block-pacientes .item-inner {
+    padding-right: 35px;
+    font-size: 12px;
+}
+.list-block-pacientes .item-content {
+    padding-left: 18px;
+    border-bottom: 2px solid #efefef;
+}
+/*detalle paciente*/
+a.active.tab-link .img-right{
+    width: 30px;
+    float: right;
+    padding: 5px 9px;
+}
+.content-paciente{
+    margin: -15px 0px 0px 0px;
+    padding: 0px;
+}
+img.img-lg-paciente {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.content-paciente .info-paciente{
+    padding: 0px 16px;
+}
+.funciones{
+    border-top: 2px solid #6d6d72;
+    text-align: center;
+}
+.funciones div{
+    float: left;
+}

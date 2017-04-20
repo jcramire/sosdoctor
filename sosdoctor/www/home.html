@@ -1,0 +1,34 @@
+<!-- We don't need full layout in this file because this page will be parsed with Ajax. It is just enough to put here .navbar and .page-->
+<div data-page="home" class="page">
+  <!-- Top Navbar-->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left">
+       <!-- <a href="#" class="back link"></a> -->
+        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+      </div>
+      <div class="center sliding">Monitoreo por mapa</div>
+      <div class="right">
+        <a href="#" class="link icon-only"><img src="img/navbar/agenda.svg"></a>
+        <a href="paciente/listado.html" class="link icon-only"><img src="img/navbar/ver_listado.svg"></a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Sub navbar -->
+  <div class="subnavbar">
+    <!-- Sub navbar content, for example tabs buttons -->
+    <div class="buttons-row">
+      <div class="left">
+        <a href="#" class="icon-only"><img id="avatar_doctor"></a>
+      </div>
+      <div class="center sliding">
+      </div>
+      <div class="right">
+      </div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div id="map"></div>
+  </div>
+</div>
