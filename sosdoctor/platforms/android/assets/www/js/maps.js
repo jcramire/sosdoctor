@@ -169,26 +169,29 @@ function initMap() {
           '<div class="swiper-slide"><img src="img/modal_paciente/paciente_tam_ori.jpg" height="150" style="display:block"></div>' +
           '<div class="text-paciente">' +
           '<div>Paciente</div>' +
-          '<div>' + pacientes.nombre + '</div>' +
+          '<div>' + pacientes.nombre +' '+pacientes.apellido+  '</div>' +
           '</div>' +
           '</div>' +
           '<div class="info-paciente">' +
           '<div class="detalle">' +
           '<img src="img/modal_paciente/encama.svg"></img>' +
           '<div>' +
-          '<div>Movilidad: ' + pacientes.tipo + '</div>' +
+          '<div><strong>Movilidad: </strong>' + pacientes.tipo + '</div>' +
           '<div>' + pacientes.enfermedad_cronica + '</div>' +
           '</div>' +
           '</div>' +
           '<div class="control">' +
           '<img src="img/modal_paciente/pide_hora.svg"></img>' +
           '<div>' +
-          '<div>Ultimo control online: ' + pacientes.fecha_revision + '</div>' +
+          '<div><strong>Ultimo control online: </strong>' + pacientes.fecha_revision + '</div>' +
           '</div>' +
           '</div>' +
           '</div>' +
           '</div>',
         buttons: [
+          {
+           text: 'Cerrar'
+         },
           {
             text: 'Detalle paciente',
             bold: true,

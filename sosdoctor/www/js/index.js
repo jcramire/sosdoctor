@@ -1,5 +1,8 @@
 // Initialize app
-var myApp = new Framework7();
+var myApp = new Framework7({
+  //pushState: true,
+  swipePanel: 'left',
+});
 
 // If we need to use custom DOM library, let's save it to $$ variable:
 var $$ = Dom7;
@@ -7,7 +10,8 @@ var $$ = Dom7;
 // Add view
 var mainView = myApp.addView('.view-main', {
   // Because we want to use dynamic navbar, we need to enable it for this view:
-  dynamicNavbar: true
+  //dynamicNavbar: true
+  //domCache: false
 });
 
 document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -23,6 +27,7 @@ function onDeviceReady() {
 
 }
 
+
 /*-----------------------------------------------------------------------------*/
 /*--------------------------------- Index -------------------------------------*/
 /*-----------------------------------------------------------------------------*/
@@ -31,7 +36,6 @@ if (localStorage.getItem('login')=="on") {
 }
 $$(".close-panel").on('click',function () {
     localStorage.setItem('login',"off");
-    //mainView.router.reloadPage('index.html');
 });
 
 /* Login */
@@ -163,6 +167,10 @@ myApp.onPageInit('home', function(page) {
   $$(".subnavbar .buttons-row .center").append(
     'Dr. ' + localStorage.getItem("nombre") + ' ' + localStorage.getItem("apellido") + ' <br>Pacientes Asignados'
   );
+  $$('.icon.icon-bars').on('click', function (e) {
+      // 'left' position to open Left panel
+      myApp.openPanel('left');
+  });
 })
 
 /*-----------------------------------------------------------------------------*/
@@ -176,12 +184,11 @@ myApp.onPageInit('home', function(page) {
 /*-----------------------------------------------------------------------------*/
 /* Listado */
 myApp.onPageInit('listado', function(page) {
+  $$(".page-content").css("background","white");
   $$("#avatar_doctor").attr("src", "img/avatar_doctor/"+localStorage.getItem("id_doctor")+".png");
   $$(".subnavbar .buttons-row .center").append(
     'Dr. ' + localStorage.getItem("nombre") + ' ' + localStorage.getItem("apellido") + ' <br>Pacientes Asignados'
   );
-
-
   /*Cargar listado*/
   var parametros = new Object();
   parametros.id_doctor = localStorage.getItem("id_doctor");
