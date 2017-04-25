@@ -7,6 +7,10 @@
         <param name="android-package" value="org.apache.cordova.firebase.FirebasePlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <name>sosdoctor</name>
     <description>
         A blank PhoneGap app.

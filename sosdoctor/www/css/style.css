@@ -12,7 +12,7 @@
 }
 
 .login-screen-content .content-block {
-    padding: 80px 16px;
+    padding: 58px 16px;
 }
 
 
@@ -102,11 +102,26 @@
 .right a:last-child {
   padding: 4px 13px 0px 3px!important;
 }
+/*navbar detalle paciente*/
+.icon-right a.link {
+    height: 40px;
+}
+.icon-right a {
+    padding: 0px 3px 0px 3px !important;
+}
+.icon-right a:last-child {
+    padding: 0px 4px 0px 5px !important;
+}
+.paciente-detalle .page-content{
+  background: white;
+}
 
-#avatar_doctor{
-  width: 35px;
+
+#avatar_doctor, #avatar_paciente{
+  width: 37px;
   height: 100%;
 }
+
 .link img, .buttons-row .left a img {
   height: 28px;
   width: 28px;
@@ -155,7 +170,7 @@
 
 /*modal*/
 
-.modal {
+/*.modal {
   width: 285px;
   left: 50%;
   border-radius: 0px;
@@ -165,7 +180,7 @@
 }
 .modal-inner .swiper-container {
     margin-top: -1px !important;
-}
+}*/
 
 .info-paciente{
   padding: 0px 15px;
@@ -211,31 +226,67 @@
     font-size: 12px;
 }
 .list-block-pacientes .item-content {
-    padding-left: 18px;
+    padding: 5px 10px 5px 12px;
     border-bottom: 2px solid #efefef;
 }
+.item-inner {
+    line-height: 17px;
+}
+.item-title {
+    text-transform: capitalize;
+}
 /*detalle paciente*/
+.content-paciente{
+    margin: -2px 0px 0px 0px;
+    padding: 0px;
+}
+img#img-lg-paciente {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 a.active.tab-link .img-right{
     width: 30px;
     float: right;
     padding: 5px 9px;
 }
-.content-paciente{
-    margin: -15px 0px 0px 0px;
-    padding: 0px;
-}
-img.img-lg-paciente {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-.content-paciente .info-paciente{
+.info-paciente{
     padding: 0px 16px;
 }
-.funciones{
-    border-top: 2px solid #6d6d72;
+.function{
+    border-top: 4px solid #3333331a;
     text-align: center;
 }
 .funciones div{
     float: left;
+}
+.list-info {
+    margin: 13px 0px 15px 0px;
+    font-size: 16px;
+}
+.list-block .item-title{
+  color: #333;
+}
+.list-block ul::before, .list-block ul::after {
+  background-color: white;
+}
+.list-info ul li{
+  padding: 4px 0px;
+}
+.list-unstyled {
+    list-style: none;
+    padding: 15px 0px 0px 0px;
+    margin: 0px;
+}
+.list-unstyled li{
+  display: inline-block;
+}
+.list-unstyled li p{
+  width: 75px;
+  line-height: 15px;
+  margin: 3px;
+
+}
+li:nth-child(2) .item-content .item-inner .item-title{
+  text-transform: lowercase;
 }

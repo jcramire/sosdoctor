@@ -12,6 +12,9 @@
         },
         "cordova-plugin-firebase": {
             "PACKAGE_NAME": "com.naturalphone.sosdoctor"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.naturalphone.sosdoctor"
         }
     },
     "dependent_plugins": {}

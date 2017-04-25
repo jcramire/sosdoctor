@@ -22,8 +22,9 @@ function initMap() {
 
   var parametros = new Object();
   parametros.id_doctor = localStorage.getItem("id_doctor");
+  setInterval(function(){
   $$.ajax({
-    type: "GET",
+    type: "POST",
     dataType: "jsonp",
     data: parametros,
     url: "http://190.98.210.37/jcr/webservices/pacientes_listado.php",
@@ -119,7 +120,7 @@ function initMap() {
       myApp.alert("Error de conexion", 'Error!');
     }
   });
-
+}, 2000);
 
   function removeMarker(position) {
     //console.log("markersArray "+ markersArray.length);
@@ -196,11 +197,19 @@ function initMap() {
             text: 'Detalle paciente',
             bold: true,
             onClick: function() {
-              mainView.router.loadPage('listado_paciente.html');
+              console.log("id "+pacientes.id_paciente);
+              paciente(pacientes.id_paciente);
+              mainView.router.refreshPage('paciente/detalle.html');
             }
           },
         ]
       })
+      $$(".modal").css('width', '285px');
+      $$(".modal").css('margin-top', '-120px');
+      $$(".modal").css('left', '50%');
+      $$(".modal").css('border-radius', '0px');
+      $$(".modal-inner").css('padding', '0px 15px 10px');
+      $$(".swiper-container").css('margin', '0px -15px -15px');
     });
   }
 }

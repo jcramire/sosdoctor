@@ -3,8 +3,7 @@
     <string name="app_name">sosdoctor</string>
     <string name="launcher_name">@string/app_name</string>
     <string name="activity_name">@string/launcher_name</string>
+    
     <string name="google_app_id">1:1070576195140:android:dfa7bf9e43fe7657</string>
     <string name="google_api_key">AIzaSyCyuK9PvPkbBT-88rogeFWMuSLrkMce77U</string>
-    <string name="google_app_id">@string/google_app_id</string>
-    <string name="google_api_key">@string/google_api_key</string>
 </resources>
